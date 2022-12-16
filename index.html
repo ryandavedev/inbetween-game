@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Silkscreen&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="main-container">
+
+            <div class="how-to-play">
+                <button class="mechanics"> How to play</button>
+            </div>
+
+            <div class="modal">
+                <div class="modal-container">
+                    <h3>Mechanics</h3>
+                    <p>1. Draw 2 random numbers between <span>1</span> to <span>13</span>.</p>
+                    <p>2. Click the <span>Call</span> button to draw the third number.</p>
+                    <p>3. If the third number is <span>In-between</span> of the first and the second number, <span>YOU WIN</span>. otherwise, you lose!</p>
+                    <p>Example: <span>3</span> and <span>9</span>, the third number is <span>5</span>. YOU WIN!</p>
+                    <p>If you had the same number when you draw. For an example, <span>2</span> and <span>2</span>. You'll have the option to choose between lower and higher.</p>
+                    <p><span>Lower</span> - the third number will be greater less than the first two numbers.</p>
+                    <p><span>Higher</span> - the third number will be greater than the first two numbers.</p>
+                    <p> <span>Enjoy the Game!</span>
+                    </p>
+                </div>
+
+                <button class="close-modal">x</button>
+            </div>
+            
+            <div class="overlay"></div>
+
+            <div class="home-page">
+                <div class="title">
+                    <p>In-Between Game</p>
+                </div>
+
+                <button class="start--btn">Start Game</button>
+            </div>
+
+            <div class="main" id="main">
+                <div class="start-button">
+                    <button data-draw-number class="btn">
+                        Draw Numbers
+                    </button>
+                </div>
+
+                <div class="class-container">
+                    <div class="number">
+                        <p id="first-card"></p>
+                    </div>
+                    <div class="number">
+                        <p id="second-card"></p>
+                    </div>
+                </div>
+
+                <div class="call-container">
+                    <button data-lower class="btn">Lower</button>
+                    <button data-call class="btn"">Call</button>
+                    <button data-higher class="btn">Higher</button>
+                </div>
+
+                <div class="results">
+                    <div class="next-number">
+                        <p id="third-number"></p>
+                    </div>
+                    <div class="results-statement">
+                        <p id="results"></p>
+                    </div>
+
+                    <div class="try-again">
+                        <button data-try-again class="btn"">Try Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
